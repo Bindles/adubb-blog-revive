@@ -1,0 +1,10 @@
+../adubb-blog-v2.txt
+Adubb Blog 2.0 - A Blog made for Alex with many features, dropdown menu, devise login wit cv, original layout needs work.
+updated from Ruby 3.1.2 -> 3.2.2
+updated from rails 7.04 -> 7.0.7
+fixed for and running on linux
+
+2.0
+Custom Devise Views
+Add User.username
+hhh
