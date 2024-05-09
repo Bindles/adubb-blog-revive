@@ -23,8 +23,8 @@ class PostsController < ApplicationController
 
   # POST /posts or /posts.json
   def create
-    @post = current_user.posts.build(post_params)
-  
+    @post = Post.new(post_params)
+
     respond_to do |format|
       if @post.save
         format.html { redirect_to post_url(@post), notice: "Post was successfully created." }
@@ -35,7 +35,6 @@ class PostsController < ApplicationController
       end
     end
   end
-  
 
   # PATCH/PUT /posts/1 or /posts/1.json
   def update

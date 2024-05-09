@@ -4,7 +4,7 @@
             <%= current_user.email %>
         </a>
         <ul class="dropdown-menu dropdown-menu-lg-end" aria_labelledby="navbarDropdown">
-            <% if current_user.email == "admin@gmail.com" %>  
+            <% if current_user.email == "admin@abc.com" %>  
                 <li><%= link_to "New Post", "posts/new", class: "dropdown-item", disabled: true %></li>
             <% end %>
             <li><%= link_to "New PostLOgout", destroy_user_session_path, method: "delete", class: "dropdown-item" %></li>
